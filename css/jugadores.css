@@ -1,0 +1,157 @@
+:root {
+  --celeste-principal: #43A1D5;
+  --blanco: #FFFFFF;
+  --azul-oscuro: #173E69;
+  --dorado: #D5B048;
+  --fondo-oscuro: #0F172A;
+  --gris-claro: #E8EEF5;
+}
+
+body {
+  margin: 0;
+  background-color: var(--gris-claro);
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.afa-top-bar {
+  background-color: var(--azul-oscuro);
+  color: var(--blanco);
+}
+
+.afa-top-title {
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: 0.95rem;
+}
+
+.afa-navbar {
+  background-color: var(--celeste-principal);
+  padding: 1rem 0;
+  border-bottom: 3px solid var(--dorado);
+}
+
+.afa-nav-list {
+  gap: 2.5rem;
+}
+
+.afa-nav-link {
+  color: var(--blanco) ;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.afa-nav-link:hover {
+  color: var(--dorado) ;
+}
+
+.afa-logo-item {
+  margin: 0 1rem;
+}
+
+.afa-logo-link {
+  padding: 0;
+}
+
+.afa-logo-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+  height: 110px;
+  flex-shrink: 0;
+}
+
+.afa-logo-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.afa-logo-text img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.afa-nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.afa-toggler {
+  background-color: var(--blanco);
+  border: 2px solid var(--dorado);
+  flex-shrink: 0;
+}
+
+.afa-navbar .navbar-collapse.show,
+.afa-navbar .navbar-collapse.collapsing {
+  background-color: var(--celeste-principal);
+  padding-top: 1rem;
+}
+
+@media (max-width: 991.98px) {
+  .afa-nav-container {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .afa-navbar {
+    padding: 0.75rem 0;
+  }
+
+  .afa-nav-list {
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .afa-nav-item,
+  .afa-nav-link {
+    width: 100%;
+  }
+
+  .afa-logo-item {
+    order: -1;
+    margin: 0 auto 0.5rem auto;
+  }
+
+  .afa-logo-circle {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .afa-top-title {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+  }
+
+  .afa-nav-link {
+    font-size: 0.85rem;
+  }
+
+  .afa-logo-circle {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 400px) {
+  .afa-top-title {
+    font-size: 0.65rem;
+    letter-spacing: 1px;
+  }
+
+  .afa-logo-circle {
+    width: 60px;
+    height: 60px;
+  }
+}
