@@ -166,7 +166,7 @@ footer {
 
   padding: 40px 20px;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 0;
 }
 
 .footer-logo h2 {
@@ -207,4 +207,132 @@ footer {
 .footer-logo p {
   color: #FFD700;
   font-size: 28px;
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+.form-container {
+  max-width: 500px;
+  width: 100%;
+  background: transparent;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.titulo {
+  font-style: italic;
+  font-weight: 800;
+  font-size: 30px;
+  letter-spacing: 0.5px;
+  margin: 0;
+  color: #1a1a2e;
+}
+
+.descripcion {
+  font-size: 14px;
+  color: #555555;
+  margin: 0 0 8px;
+  line-height: 1.5;
+}
+
+.ubicacion {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.ubicacion .icono {
+  color: #0c7cd5;
+  font-size: 18px;
+  margin-top: 2px;
+}
+
+.ubicacion .nombre-sede {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+  color: #1a1a2e;
+}
+
+.ubicacion .direccion {
+  font-size: 13px;
+  color: #777777;
+  margin: 2px 0 0;
+}
+
+.mapa-wrapper {
+  width: 100%;
+  height: 250px;
+  border: 2px solid #1a1a2e;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+}
+
+.campo {
+  width: 100%;
+  padding: 10px 4px;
+  margin-bottom: 24px;
+  border: none;
+  border-bottom: 1px solid #d5d5d5;
+  font-size: 14px;
+  background: transparent;
+  box-sizing: border-box;
+  outline: none;
+  color: #333333;
+}
+
+.campo::placeholder {
+  color: #9a9a9a;
+}
+
+.campo:focus {
+  border-bottom: 1px solid #0c4a6e;
+}
+
+.boton-enviar {
+  width: 100%;
+  background-color: #43A1D5;
+  color: #ffffff;
+  border: none;
+  padding: 16px;
+  border-radius: 3px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.boton-enviar:hover {
+  background-color: #43A1D5;
+}
+
+.mapa-wrapper {
+  width: 100%;
+  height: 200px;
+  margin-top: 16px;
+  border: 2px solid #1a1a2e;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.mapa-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
 }
