@@ -1,10 +1,10 @@
 :root {
-  --celeste-principal: #43A1D5;
-  --blanco: #FFFFFF;
-  --azul-oscuro: #173E69;
-  --dorado: #D5B048;
-  --fondo-oscuro: #0F172A;
-  --gris-claro: #E8EEF5;
+  --celeste-principal: #43a1d5;
+  --blanco: #ffffff;
+  --azul-oscuro: #173e69;
+  --dorado: #d5b048;
+  --fondo-oscuro: #0f172a;
+  --gris-claro: #e8eef5;
 }
 
 body {
@@ -156,13 +156,25 @@ body {
   }
 }
 
+.card-zoom {
+  transition-property: all;
+  transition-duration: 0.5s;
+  border: 3px solid var(--dorado)
+}
+
+.card-zoom:hover {
+  transform: scale(1.2);
+}
+
 footer {
-  background: linear-gradient(135deg,
-      #43A1D5 0%,
-      #5CB7E8 25%,
-      #FFFFFF 50%,
-      #43A1D5 75%,
-      #173E69 100%);
+  background: linear-gradient(
+    135deg,
+    #43a1d5 0%,
+    #5cb7e8 25%,
+    #ffffff 50%,
+    #43a1d5 75%,
+    #173e69 100%
+  );
 
   padding: 40px 20px;
   text-align: center;
@@ -170,7 +182,7 @@ footer {
 }
 
 .footer-logo h2 {
-  color: #FFD700;
+  color: #ffd700;
   font-size: 55px;
   font-weight: bold;
   font-style: italic;
@@ -193,10 +205,10 @@ footer {
 }
 
 .iconos-footer a {
-  color: #FFD700;
+  color: #ffd700;
   font-size: 35px;
   text-decoration: none;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .iconos-footer a:hover {
@@ -205,6 +217,6 @@ footer {
 }
 
 .footer-logo p {
-  color: #FFD700;
+  color: #ffd700;
   font-size: 28px;
 }
