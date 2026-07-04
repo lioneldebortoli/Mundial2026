@@ -1,10 +1,10 @@
 :root {
-  --celeste-principal: #43A1D5;
-  --blanco: #FFFFFF;
-  --azul-oscuro: #173E69;
-  --dorado: #D5B048;
-  --fondo-oscuro: #0F172A;
-  --gris-claro: #E8EEF5;
+  --celeste-principal: #43a1d5;
+  --blanco: #ffffff;
+  --azul-oscuro: #173e69;
+  --dorado: #d5b048;
+  --fondo-oscuro: #0f172a;
+  --gris-claro: #e8eef5;
 }
 
 body {
@@ -157,12 +157,14 @@ body {
 }
 
 footer {
-  background: linear-gradient(135deg,
-      #43A1D5 0%,
-      #5CB7E8 25%,
-      #FFFFFF 50%,
-      #43A1D5 75%,
-      #173E69 100%);
+  background: linear-gradient(
+    135deg,
+    #43a1d5 0%,
+    #5cb7e8 25%,
+    #ffffff 50%,
+    #43a1d5 75%,
+    #173e69 100%
+  );
 
   padding: 40px 20px;
   text-align: center;
@@ -170,7 +172,7 @@ footer {
 }
 
 .footer-logo h2 {
-  color: #FFD700;
+  color: #ffd700;
   font-size: 55px;
   font-weight: bold;
   font-style: italic;
@@ -193,10 +195,10 @@ footer {
 }
 
 .iconos-footer a {
-  color: #FFD700;
+  color: #ffd700;
   font-size: 35px;
   text-decoration: none;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .iconos-footer a:hover {
@@ -205,6 +207,181 @@ footer {
 }
 
 .footer-logo p {
-  color: #FFD700;
+  color: #ffd700;
   font-size: 28px;
+}
+
+.afa-titulo-seccion {
+  color: var(--azul-oscuro);
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.afa-titulo-seccion::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 70px;
+  height: 4px;
+  background-color: var(--dorado);
+  border-radius: 4px;
+}
+
+.text-center.afa-titulo-seccion::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.afa-historia {
+  background-color: var(--blanco);
+}
+
+.afa-texto-historia {
+  color: #3c4a5e;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.afa-img-historia {
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(23, 62, 105, 0.2);
+  width: 100%;
+  object-fit: cover;
+}
+
+.afa-mundiales {
+  background-color: var(--blanco);
+}
+
+.afa-card-mundial {
+  background-color: var(--gris-claro);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(23, 62, 105, 0.12);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.afa-card-mundial:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 26px rgba(23, 62, 105, 0.2);
+}
+
+.afa-card-mundial-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.afa-card-mundial-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.afa-card-mundial-año {
+  color: var(--azul-oscuro);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.afa-card-mundial-texto {
+  color: #3c4a5e;
+  flex-grow: 1;
+  margin-bottom: 1.25rem;
+}
+
+.afa-curiosidades {
+  background-color: var(--gris-claro);
+}
+
+.afa-card-curiosidad {
+  background-color: var(--blanco);
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  height: 100%;
+  box-shadow: 0 4px 14px rgba(23, 62, 105, 0.1);
+  transition: transform 0.25s ease;
+}
+
+.afa-card-curiosidad:hover {
+  transform: translateY(-5px);
+}
+
+.afa-curiosidad-icono {
+  font-size: 2.2rem;
+  color: var(--celeste-principal);
+  margin-bottom: 1rem;
+}
+
+.afa-curiosidad-titulo {
+  color: var(--azul-oscuro);
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.afa-curiosidad-texto {
+  color: #3c4a5e;
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+.afa-card-leyenda {
+  text-align: center;
+}
+
+.afa-leyenda-foto {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--dorado);
+  box-shadow: 0 6px 16px rgba(23, 62, 105, 0.2);
+  margin-bottom: 1rem;
+}
+
+.afa-leyenda-nombre {
+  color: var(--azul-oscuro);
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.afa-leyenda-texto {
+  color: #3c4a5e;
+  font-size: 0.9rem;
+}
+
+.afa-datos {
+  background-color: var(--azul-oscuro);
+}
+
+.afa-card-dato {
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--dorado);
+  border-radius: 16px;
+  text-align: center;
+  padding: 2rem 1rem;
+  height: 100%;
+}
+
+.afa-dato-icono {
+  display: block;
+  font-size: 2.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.afa-dato-texto {
+  color: var(--blanco);
+  font-weight: 600;
+  margin-bottom: 0;
 }
