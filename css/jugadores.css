@@ -164,6 +164,7 @@ body {
 
 .card-zoom:hover {
   transform: scale(1.2);
+  z-index: 1000;
 }
 
 footer {
