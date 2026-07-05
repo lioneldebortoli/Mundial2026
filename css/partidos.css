@@ -1,10 +1,10 @@
 :root {
-  --celeste-principal: #43A1D5;
-  --blanco: #FFFFFF;
-  --azul-oscuro: #173E69;
-  --dorado: #D5B048;
-  --fondo-oscuro: #0F172A;
-  --gris-claro: #E8EEF5;
+  --celeste-principal: #43a1d5;
+  --blanco: #ffffff;
+  --azul-oscuro: #173e69;
+  --dorado: #d5b048;
+  --fondo-oscuro: #0f172a;
+  --gris-claro: #e8eef5;
 }
 
 body {
@@ -157,12 +157,14 @@ body {
 }
 
 footer {
-  background: linear-gradient(135deg,
-      #43A1D5 0%,
-      #5CB7E8 25%,
-      #FFFFFF 50%,
-      #43A1D5 75%,
-      #173E69 100%);
+  background: linear-gradient(
+    135deg,
+    #43a1d5 0%,
+    #5cb7e8 25%,
+    #ffffff 50%,
+    #43a1d5 75%,
+    #173e69 100%
+  );
 
   padding: 40px 20px;
   text-align: center;
@@ -170,7 +172,7 @@ footer {
 }
 
 .footer-logo h2 {
-  color: #FFD700;
+  color: #ffd700;
   font-size: 55px;
   font-weight: bold;
   font-style: italic;
@@ -193,10 +195,10 @@ footer {
 }
 
 .iconos-footer a {
-  color: #FFD700;
+  color: #ffd700;
   font-size: 35px;
   text-decoration: none;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .iconos-footer a:hover {
@@ -205,6 +207,253 @@ footer {
 }
 
 .footer-logo p {
-  color: #FFD700;
+  color: #ffd700;
   font-size: 28px;
+}
+
+.afa-titulo-seccion {
+  color: var(--azul-oscuro);
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.afa-titulo-seccion::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 4px;
+  background-color: var(--dorado);
+  border-radius: 4px;
+}
+
+.afa-titulo-partidos {
+  background-color: var(--blanco);
+}
+
+.afa-titulo-principal {
+  color: var(--azul-oscuro);
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.afa-subtitulo-principal {
+  color: #3c4a5e;
+  font-size: 1.1rem;
+  max-width: 650px;
+  margin: 0.5rem auto 0;
+}
+
+.afa-posiciones {
+  background-color: var(--gris-claro);
+}
+
+.afa-tabla-wrapper {
+  background-color: var(--blanco);
+  border-radius: 16px;
+  padding: 1rem;
+  box-shadow: 0 6px 18px rgba(23, 62, 105, 0.12);
+}
+
+.afa-tabla-posiciones thead {
+  background-color: var(--azul-oscuro);
+  color: var(--blanco);
+}
+
+.afa-tabla-posiciones thead th {
+  border: none;
+  font-weight: 600;
+  padding: 0.85rem 0.5rem;
+}
+
+.afa-tabla-posiciones tbody td {
+  padding: 0.85rem 0.5rem;
+  color: #3c4a5e;
+  border-color: var(--gris-claro);
+}
+
+.afa-equipo-celda {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 600;
+}
+
+.afa-bandera-emoji {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.afa-fila-destacada {
+  background-color: rgba(67, 161, 213, 0.15);
+}
+
+.afa-fila-destacada td {
+  color: var(--azul-oscuro);
+  font-weight: 700;
+}
+
+.afa-pts {
+  color: var(--dorado);
+  font-weight: 700;
+}
+
+.afa-resultados {
+  background-color: var(--blanco);
+}
+
+.afa-card-resultado {
+  background-color: var(--gris-claro);
+  border-radius: 18px;
+  overflow: hidden;
+  height: 100%;
+  box-shadow: 0 6px 18px rgba(23, 62, 105, 0.12);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.afa-card-resultado:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 26px rgba(23, 62, 105, 0.2);
+}
+
+.afa-card-resultado-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.afa-card-resultado-body {
+  padding: 1.5rem;
+}
+
+.afa-marcador {
+  color: var(--azul-oscuro);
+  font-weight: 700;
+  font-size: 1.15rem;
+  margin-bottom: 0.75rem;
+}
+
+.afa-lista-goles {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.75rem;
+  color: #3c4a5e;
+}
+
+.afa-lista-goles li {
+  margin-bottom: 0.25rem;
+}
+
+.afa-gol-rival {
+  color: #3c4a5e;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.afa-badge-victoria {
+  background-color: var(--celeste-principal);
+  color: var(--blanco);
+  font-weight: 600;
+  padding: 0.45rem 0.9rem;
+  border-radius: 20px;
+}
+
+.afa-dieciseisavos {
+  background-color: var(--blanco);
+}
+
+.afa-card-destacada {
+  background-color: var(--blanco);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 8px 22px rgba(23, 62, 105, 0.15);
+  border: 2px solid var(--dorado);
+}
+
+.afa-dieciseisavos-img {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  max-height: 320px;
+}
+
+.afa-marcador-grande {
+  font-size: 1.4rem;
+  margin-bottom: 1.25rem;
+}
+
+.afa-subtitulo-goles {
+  color: var(--celeste-principal);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.afa-badge-clasificados {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: var(--dorado);
+  color: var(--azul-oscuro);
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+}
+
+.afa-card-proximo {
+  max-width: 600px;
+  background-color: var(--gris-claro);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 22px rgba(23, 62, 105, 0.15);
+}
+
+.afa-proximo-img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.afa-proximo-body {
+  padding: 2rem;
+}
+
+.afa-proximo-equipos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.afa-proximo-equipo {
+  color: var(--azul-oscuro);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.afa-proximo-vs {
+  color: var(--dorado);
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+
+.afa-proximo-instancia {
+  color: #3c4a5e;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.afa-badge-proximamente {
+  background-color: var(--celeste-principal);
+  color: var(--blanco);
+  font-weight: 600;
+  padding: 0.45rem 0.9rem;
+  border-radius: 20px;
 }
