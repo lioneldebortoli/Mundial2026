@@ -208,3 +208,103 @@ footer {
   color: #FFD700;
   font-size: 28px;
 }
+
+main article {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+main .titulo {
+  font-size: 30px;
+  font-weight: 800;
+  color: #173E69;
+  margin: 0 0 20px;
+  padding-bottom: 12px;
+  border-bottom: 3px solid #D5B048;
+}
+
+main .texto {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #444444;
+  margin: 0 0 16px;
+}
+
+article.py-5 img {
+  border-radius: 10px;
+}
+
+article.titu ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+}
+
+article.titu ul li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 16px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #444444;
+}
+
+article.titu ul li::before {
+  content: "●";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  color: #43A1D5;
+  font-size: 12px;
+}
+
+article.titu ul li strong {
+  color: #173E69;
+}
+
+main article .row h6 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #43A1D5;
+  margin-bottom: 12px;
+}
+
+main article .row p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #444444;
+  padding: 0 10px;
+}
+
+main article:last-of-type ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+}
+
+main article:last-of-type ul li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 14px;
+  font-size: 15px;
+  font-style: italic;
+  line-height: 1.6;
+  color: #555555;
+}
+
+main article:last-of-type ul li::before {
+  content: "\201C";
+  position: absolute;
+  left: 0;
+  top: -2px;
+  color: #D5B048;
+  font-size: 20px;
+  font-style: normal;
+}
+
+@media (max-width: 700px) {
+  main .titulo {
+    font-size: 24px;
+  }
+}
